@@ -21,4 +21,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  Rails.application.routes.draw do
+    resources :people, only: [:index, :show]
+    resources :planets, only: [:index, :show]
+    resources :spacecrafts, only: [:index, :show]
+    resources :vehicles, only: [:index, :show]
+    resources :films, only: [:index, :show]
+    resources :species, only: [:index, :show]
+
+    root 'people#index'
 end
