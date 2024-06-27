@@ -73,3 +73,8 @@ gem "activeadmin", "~> 3.2"
 gem "devise", "~> 4.9"
 
 gem "sass-rails", "~> 6.0"
+
+group :development, :test do
+  gem 'faker', '~> 2.20'
+
+end

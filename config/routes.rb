@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'species/index'
+  get 'species/show'
+  get 'films/index'
+  get 'films/show'
+  get 'vehicles/index'
+  get 'vehicles/show'
+  get 'spacecrafts/index'
+  get 'spacecrafts/show'
+  get 'planets/index'
+  get 'planets/show'
+  get 'people/index'
+  get 'people/show'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
